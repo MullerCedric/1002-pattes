@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/grid-test-fl.css" />
+	<title>Test grille</title>
+</head>
+<body style="display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0;">
+    <header class="o-wrapper">
+        <nav class="o-grid o-grid--v-centered o-grid--h-centered">
+            <div class="o-grid__col o-1/12">
+                <div class="o-grid__cell" style="height: 80px;">Logo</div>
+            </div>
+            <div class="o-grid__col o-9/12">
+                <div class="o-grid__cell">Navigation</div>
+            </div>
+        </nav>
+    </header>
+	<main class="o-wrapper" style="flex: 1;">
+        <section class="o-grid o-grid--v-centered o-grid--h-centered">
+            <div class="o-grid__col o-5/12">
+                <div class="o-grid__cell">Texte & bouton</div>
+            </div>
+            <div class="o-grid__col o-6/12 offset1col">
+                <div class="o-grid__cell" style="height: 60px;">Image</div>
+            </div>
+        </section>
+        <section class="o-grid">
+            <div class="o-grid__col o-12/12">
+                <div class="o-grid__cell">
+                    Section 12/12
+                </div>
+            </div>
+        </section>
+        <section class="o-grid">
+            <div class="o-grid__col o-6/12">
+                <div class="o-grid__cell">
+                    Section 6/12
+                </div>
+            </div>
+        </section>
+        <section class="o-grid">
+            <div class="o-grid__col o-12/12">
+                <div class="o-grid__cell">
+                    <div class="o-grid">
+                        <div class="o-grid__col o-4/12">
+                            <div class="o-grid__cell">
+                                Section 4/12 test test test test test test test test test test test test
+                            </div>
+                        </div>
+                        <div class="o-grid__col o-4/12">
+                            <div class="o-grid__cell">
+                                Section 4/12
+                            </div>
+                        </div>
+                        <div class="o-grid__col o-4/12">
+                            <div class="o-grid__cell">
+                                Section 4/12
+                            </div>
+                        </div>
+                        <div class="o-grid__col o-4/12">
+                            <div class="o-grid__cell">
+                                Section 4/12
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+	</main>
+    <footer>
+        Sticky footer !
+    </footer>
+</body>
+</html>

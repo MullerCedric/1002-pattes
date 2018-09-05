@@ -1,0 +1,47 @@
+/* La Maison du 1002 pattes
+ * /src/sass/styles.scss - Main styles
+ * coded by MullerCedric
+ */
+
+// ITCSS
+// Settings : Font definition, colors, variables, etc
+// Tools : Mixins and functions
+// Generic : Ground-zero styles (Normalize, reset, box-sizing)
+// Base : Bare HTML elements (headings, links, reset list, anchors, etc) -> "redifining browser default styling"
+// Objects : Cosmetic-free/undecorated design patterns (Media Object, containers, grids, global animation, etc)
+// Components : Designed components, specific chunks of UI. UI components are often composed of Objects and Components
+// Trumps : Utilities and helper classes with ability to override anything (hide helper, etc.)
+
+
+@import "settings/_colors";
+@import "settings/_fonts";
+@import "settings/_animations";
+@import "settings/grid-variables";
+
+@import "tools/_mixins";
+
+@import "generic/_reset";
+
+@import "base/_body";
+@import "base/_headings";
+@import "base/_links";
+@import "base/_main";
+@import "base/_nav";
+@import "base/_section";
+@import "base/_sizes";
+@import "base/_type";
+
+@import "objects/_o-wrapper";
+@import "objects/_o-grid";
+
+@import "components/c-background";
+@import "components/c-bloc";
+@import "components/c-cta";
+@import "components/c-footer";
+@import "components/c-header";
+@import "components/_c-headerNav";
+@import "components/c-list";
+@import "components/c-logo";
+@import "components/c-textImage";
+
+@import "trumps/_hidden";

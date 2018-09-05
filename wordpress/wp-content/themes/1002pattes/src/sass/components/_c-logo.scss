@@ -1,0 +1,26 @@
+.c-logo {
+  width: 117px;
+  flex: none;
+  &__link {
+    display: inline-block;
+    height: 65px;
+    width: 100%;
+    background: url("../images/logo-simplified.svg") center center no-repeat scroll;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}
+@media all and (min-width: $phablet + 1) {
+  .c-logo {
+    &--landing {
+      width: 126px;
+    }
+    &__link {
+      &--landing {
+        height: 120px;
+        background-image: url("../images/logo-completed.svg");
+      }
+    }
+  }
+}

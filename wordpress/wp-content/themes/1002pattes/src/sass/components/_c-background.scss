@@ -1,0 +1,27 @@
+.c-background {
+  &--landing {
+    background: url("../images/header-gradients-bg.svg") center -2px repeat-x scroll;
+    background-size: 1920px;
+    background-color: $gray;
+  }
+  &--classic {
+    background: url("../images/header-gradient-bg.svg") center 0 no-repeat scroll;
+    background-size: 3000px;
+    background-color: $gray;
+  }
+}
+
+@media all and (max-width: $wrapper) {
+  .c-background {
+    &--landing {
+      background-size: contain;
+    }
+  }
+}
+@media all and (max-width: $phablet) {
+  .c-background {
+    &--landing {
+      background-image: none;
+    }
+  }
+}

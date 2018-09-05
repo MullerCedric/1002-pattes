@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/grid-test-av.css" />
+	<title>Test grille</title>
+</head>
+<body>
+	<h1>
+		Test des différents systèmes de grilles
+	</h1>
+	<p>
+		12 x 1 colonne (avec marge de 24px)
+	</p>
+	<p>
+		4 colonnes, 3 colonnes et 5 colonnes
+	</p>
+	<p>
+		10 colonnes, centrées
+	</p>
+	<p>
+		5 colonnes et 6 colonnes -1 (margin-left - 1col)
+	</p>
+	<p>
+		À comparer = Si toutes suivent parfaitement la grille. Ce qui est facilement responsive. Ce qui produit un HTML clair
+	</p>
+	<main>
+
+        <section class="wrapper">
+            <h2>Avalanche</h2>
+            <div class="grid">
+                <div class="grid__cell 1/12">
+                    <div class="block">
+                        1/12
+                    </div>
+                </div>
+                <div class="grid__cell 1/12">
+                    <div class="block">
+                        1/12
+                    </div>
+                </div>
+                <div class="grid__cell 1/12">
+                    <div class="block">
+                        1/12
+                    </div>
+                </div>
+                <div class="grid__cell 1/12">
+                    <div class="block">
+                        1/12
+                    </div>
+                </div>
+                <div class="grid__cell 1/12">
+                    <div class="block">
+                        1/12
+                    </div>
+                </div>
+                <div class="grid__cell 1/12">
+                    <div class="block">
+                        1/12
+                    </div>
+                </div>
+                <div class="grid__cell 1/12">
+                    <div class="block">
+                        1/12
+                    </div>
+                </div>
+                <div class="grid__cell 1/12">
+                    <div class="block">
+                        1/12
+                    </div>
+                </div>
+                <div class="grid__cell 1/12">
+                    <div class="block">
+                        1/12
+                    </div>
+                </div>
+                <div class="grid__cell 1/12">
+                    <div class="block">
+                        1/12
+                    </div>
+                </div>
+                <div class="grid__cell 1/12">
+                    <div class="block">
+                        1/12
+                    </div>
+                </div>
+                <div class="grid__cell 1/12">
+                    <div class="block">
+                        1/12
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="grid">
+                <div class="grid__cell 1/3">
+                    <div class="block">
+                        4/12
+                    </div>
+                </div>
+                <div class="grid__cell 3/12">
+                    <div class="block">
+                        3/12
+                    </div>
+                </div>
+                <div class="grid__cell 5/12">
+                    <div class="block">
+                        5/12
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="grid  grid--center grid--middle">
+                <div class="grid__cell 1/3">
+                    <div class="block">
+                        4/12
+                    </div>
+                </div>
+                <div class="grid__cell 1/3">
+                    <div class="block">
+                        4/12
+                    </div>
+                </div>
+                <div class="grid__cell 2/12">
+                    <div class="block">
+                        2/12
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="grid  grid--center grid--middle">
+                <div class="grid__cell 5/12">
+                    <div class="block">
+                        5/12
+                    </div>
+                </div>
+                <div class="grid__cell 6/12 offset1col">
+                    <div class="block">
+                        6/12
+                    </div>
+                </div>
+            </div>
+        </section>
+	</main>
+</body>
+</html>

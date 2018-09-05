@@ -1,0 +1,20 @@
+$wrapper: 1284px;
+$gutter: 24px;
+$colNumber: 12;
+
+$gdName: 'o-grid';
+$cellAndGutterName: 'col';
+$cellName: 'cell'; //element that really follows the grid. Can have a background color, be streched, etc.
+// $gdName > $gdName__$cellAndGutterName > $gdName__$cellName
+
+$lap: 1023px;
+$tablet: 780px;
+$phablet: 720px;
+$mobile: 545px;
+
+$breakpoints: (
+        "lap": "all and (max-width: #{$lap})",
+        "tablet": "all and (max-width: #{$tablet})",
+        "phablet": "all and (max-width: #{$phablet})",
+        "mobile": "all and (max-width: #{$mobile})",
+);

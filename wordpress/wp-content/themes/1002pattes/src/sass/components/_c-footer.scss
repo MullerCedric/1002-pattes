@@ -1,0 +1,35 @@
+.c-footer {
+  background-color: $primary;
+  padding: 2em 0 4em;
+  color: $white;
+  font-size: 0.714em;
+  * {
+    color: $white;
+  }
+  &__coord p {
+    line-height: 1.1;
+  }
+  &__nav {
+    text-align: right;
+  }
+  &__links {
+    color: $white;
+    border-bottom : 1px solid transparent;
+    padding: 2em .6em .4em;
+    margin-top: -2em;
+    margin-bottom: 1.25em;
+    &:hover {
+      text-decoration: none;
+      border-bottom-color: $lightSecondary;
+      color: $lightSecondary;
+    }
+  }
+}
+@media all and (max-width: $mobile) {
+  .c-footer {
+    &__nav {
+      text-align: left;
+      margin-top: 1.75em;
+    }
+  }
+}

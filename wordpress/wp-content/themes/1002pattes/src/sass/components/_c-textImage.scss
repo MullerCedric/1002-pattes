@@ -1,0 +1,32 @@
+.c-textImage {
+  margin-top: 5em;
+  margin-bottom: 9em;
+  &__img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media all and (max-width: $wrapper) {
+  .c-textImage {
+    margin-top: 3.5em;
+    margin-bottom: 4.5em;
+  }
+}
+@media all and (max-width: $lap) {
+  .c-textImage {
+    margin-top: 1.5em;
+    margin-bottom: 2.5em;
+  }
+}
+@media all and (max-width: $tablet) {
+  .c-textImage {
+    margin-top: 2.5em;
+    margin-bottom: 3em;
+  }
+}
+@media all and (max-width: $mobile) {
+  .c-textImage {
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+  }
+}

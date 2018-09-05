@@ -1,12 +1,13 @@
 <?php
 
-add_action('init', 'maison1002pattes_register_disease');
-function maison1002pattes_register_disease() {
+add_action('init', 'mmp_register_disease');
+function mmp_register_disease() {
     register_post_type( 'disease', [
             'labels' => [
                 'name' => __( 'Pathologies' ),
                 'singular_name' => __( 'Pathologie' ),
-                'add_new_item' => 'Ajouter une nouvelle pathologie'
+                'add_new_item' => 'Ajouter une nouvelle pathologie',
+	            'edit_item' => 'Modifier les informations de cette pathologie'
             ],
             'description' => 'Les maladies que 1002 pattes traite fréquemment',
             'public' => true,
@@ -18,8 +19,23 @@ function maison1002pattes_register_disease() {
     );
 }
 
-add_action('init', 'maison1002pattes_remove_disease_fields');
-function maison1002pattes_remove_disease_fields() {
+add_action('init', 'mmp_remove_disease_fields');
+function mmp_remove_disease_fields() {
 	remove_post_type_support( 'disease', 'title' );
 	remove_post_type_support( 'disease', 'editor' );
+}
+
+add_filter('acf/update_value/name=disease_name', 'mmp_acf_disease_title', 10, 3);
+function mmp_acf_disease_title( $value, $post_id, $field ) {
+	$new_title = $value;
+	$new_slug = sanitize_title( $new_title );
+
+	wp_update_post( [
+		'ID'          => $post_id,
+		'post_title'  => $new_title,
+		'post_type'   => 'disease',
+		'post_name'   => $new_slug
+	] );
+
+	return $value;
 }
